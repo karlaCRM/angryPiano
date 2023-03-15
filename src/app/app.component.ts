@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Piano';
+
+
+  makeSound(num : number){
+let audio = new Audio();
+audio.src = "../assets/sounds/note" + num + ".wav"
+audio.load();
+
+audio.play();
+  }
 }

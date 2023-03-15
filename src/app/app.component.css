@@ -1,0 +1,49 @@
+.list-group-item{
+    cursor: pointer;
+    height: 8vh;
+}
+
+
+
+.row{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 3em;
+    width: 100%;
+   
+}
+
+.list-group-item:active{
+    opacity: 0.7
+}
+.tittle{
+    width:90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'BURTONS';
+    flex-wrap: nowrap;
+   
+}
+
+.bodyBox{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+}
+
+.p{
+    font-weight: 600;
+}
+
+@include media-breakpoint-up(md) {
+    .tittle {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: xx-large;
+    
+    }
+  }
