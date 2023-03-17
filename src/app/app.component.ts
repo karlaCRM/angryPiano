@@ -11,9 +11,11 @@ export class AppComponent {
 
   makeSound(num : number){
 let audio = new Audio();
-audio.src = "../assets/sounds/note" + num + ".wav"
+audio.src = "../assets/sounds/note" + num + ".mp3"
 audio.load();
 
 audio.play();
   }
 }
+
+
